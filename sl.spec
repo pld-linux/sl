@@ -29,7 +29,9 @@ i relaksuj±c± animacja przeje¿d¿aj±cego poci±gu...
 %patch1 -p1
 
 %build
-%{__make}
+%{__make} \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
