@@ -33,11 +33,11 @@ i relaksuj±c± animacja przeje¿dzaj±cego poci±gu...
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/{jp/,}man6}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/{ja/,}man6}
 
 install sl $RPM_BUILD_ROOT%{_bindir}
 install sl-debian/sl.6 $RPM_BUILD_ROOT%{_mandir}/man6
-install sl-debian/sl.6j $RPM_BUILD_ROOT%{_mandir}/jp/man6/sl.6
+install sl-debian/sl.6j $RPM_BUILD_ROOT%{_mandir}/ja/man6/sl.6
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -45,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc sl-debian/README
-%lang(jp) %doc sl-debian/README.jp
+%lang(ja) %doc sl-debian/README.jp
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man6/*
-%lang(jp) %{_mandir}/jp/man6/*
+%lang(ja) %{_mandir}/ja/man6/*
