@@ -1,0 +1,14 @@
+diff -urN sl-3.03.orig/Makefile sl-3.03/Makefile
+--- sl-3.03.orig/Makefile	Wed Jul 22 16:00:41 1998
++++ sl-3.03/Makefile	Sun Sep 29 16:23:29 2002
+@@ -9,6 +9,8 @@
+ CFLAGS=-O
+ 
+ sl: sl.c sl.h
+-	$(CC) $(CFLAGS) -o sl sl.c -lcurses -ltermcap
++	$(CC) $(CFLAGS) -o sl sl.c -I/usr/include/ncurses -lcurses
+ #	$(CC) $(CFLAGS) -o sl sl.c -lcurses
+-
++clean: 
++	rm -rf *.o
++	rm -rf sl

@@ -1,0 +1,20 @@
+diff -urN sl-3.03.orig/sl.c sl-3.03/sl.c
+--- sl-3.03.orig/sl.c	Wed Jul 22 16:01:01 1998
++++ sl-3.03/sl.c	Sun Sep 29 16:21:23 2002
+@@ -59,7 +59,7 @@
+     }
+ }
+ 
+-void main(int argc, char *argv[])
++int main(int argc, char *argv[])
+ {
+     int x, i;
+ 
+@@ -85,6 +85,7 @@
+     }
+     mvcur(0, COLS - 1, LINES - 1, 0);
+     endwin();
++return 0;
+ }
+ 
+ 
