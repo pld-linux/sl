@@ -1,11 +1,10 @@
 Summary:	A nice animation wich appears when you mistype the ls command
-Summary(pl):	Fajna animacja, która siê pojawia przy b³ednym wpisaniu ls.
+Summary(pl):	Fajna animacja, która siê pojawia przy b³êdnym wpisaniu ls
 Name:		sl
 Version:	3.03
 Release:	2
 License:	GPL
-Group:		Console/Amusements
-######		Unknown group!
+Group:		Applications/Text
 Source0:	http://ftp.debian.org/debian/pool/main/s/sl/%{name}_%{version}.orig.tar.gz
 Source1:	%{name}-debian.tar.gz
 Patch0:		%{name}-am.patch
@@ -23,7 +22,7 @@ Je¿eli wpiszesz sl, zamiast ls, zostaniesz powitany fajn±
 i relaksuj±c± animacja przeje¿dzaj±cego poci±gu...
 
 %prep
-%setup -q -n sl-3.03.orig -a1
+%setup -q -n %{name}-%{version}.orig -a1
 %patch0 -p1
 %patch1 -p1
 
@@ -34,9 +33,9 @@ i relaksuj±c± animacja przeje¿dzaj±cego poci±gu...
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/{jp/,}man6}
 
-install sl $RPM_BUILD_ROOT/%{_bindir}
-install sl-debian/sl.6 $RPM_BUILD_ROOT/%{_mandir}/man6
-install sl-debian/sl.6j $RPM_BUILD_ROOT/%{_mandir}/jp/man6/sl.6
+install sl $RPM_BUILD_ROOT%{_bindir}
+install sl-debian/sl.6 $RPM_BUILD_ROOT%{_mandir}/man6
+install sl-debian/sl.6j $RPM_BUILD_ROOT%{_mandir}/jp/man6/sl.6
 
 %clean
 rm -rf $RPM_BUILD_ROOT
