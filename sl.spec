@@ -6,7 +6,9 @@ Release:	2
 License:	GPL
 Group:		Applications/Text
 Source0:	http://ftp.debian.org/debian/pool/main/s/sl/%{name}_%{version}.orig.tar.gz
+# Source0-md5:	d0d997b964bb3478f7f4968eee13c698
 Source1:	%{name}-debian.tar.gz
+# Source1-md5:	a13934db014b77267f1a7109588d4255
 Patch0:		%{name}-am.patch
 Patch1:		%{name}-code.patch
 URL:		http://www.tkl.iis.u-tokyo.ac.jp/~toyoda/
