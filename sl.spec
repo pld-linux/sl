@@ -1,5 +1,5 @@
 Summary:	A nice animation wich appears when you mistype the ls command
-Summary(pl):	Fajna animacja, która siê pojawia przy b³êdnym wpisaniu ls
+Summary(pl.UTF-8):   Fajna animacja, ktÃ³ra siÄ™ pojawia przy bÅ‚Ä™dnym wpisaniu ls
 Name:		sl
 Version:	3.03
 Release:	2
@@ -19,9 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 When you type sl instead of ls, you will be greeted with a nice and
 relaxing animation of a train going by...
 
-%description -l pl
-Je¿eli wpiszesz sl, zamiast ls, zostaniesz powitany fajn±
-i relaksuj±c± animacja przeje¿d¿aj±cego poci±gu...
+%description -l pl.UTF-8
+JeÅ¼eli wpiszesz sl, zamiast ls, zostaniesz powitany fajnÄ…
+i relaksujÄ…cÄ… animacja przejeÅ¼dÅ¼ajÄ…cego pociÄ…gu...
 
 %prep
 %setup -q -n %{name} -a1
