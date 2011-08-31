@@ -2,7 +2,7 @@ Summary:	A nice animation wich appears when you mistype the ls command
 Summary(pl.UTF-8):	Fajna animacja, która się pojawia przy błędnym wpisaniu ls
 Name:		sl
 Version:	3.03
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Text
 Source0:	http://www.tkl.iis.u-tokyo.ac.jp/~toyoda/%{name}/%{name}.tar
